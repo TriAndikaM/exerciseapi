@@ -17,9 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Response = WS.sendRequest(findTestObject('GET ID 5 - Post Endpoint'))
+Response = WS.sendRequest(findTestObject('GET ID 7 - Photos'))
 
 WS.verifyResponseStatusCode(Response, 200)
 
-WS.verifyElementPropertyValue(Response, 'id', '5')
+WS.verifyElementPropertyValue(Response, 'title', 'quibusdam autem aliquid et et quia')
 
